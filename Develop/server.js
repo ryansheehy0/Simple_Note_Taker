@@ -1,3 +1,11 @@
+/*
+Todo: Deploy to Heroku
+Todo: Add live link to README
+Todo: Submit
+  - Github URl
+  - Live URL
+*/
+
 const express = require("express")
 const path = require("path")
 const {readFileThenRun, changeNotesThenWrite} = require("./readAndWrite")
@@ -6,7 +14,7 @@ const getNewUUID = require("./newUUID")
 const app = express()
 
 // Middleware
-app.use(express.json())
+app.use(express.json()) // Parsing body as json
 app.use(express.static("public"))
 
 // HTTP functions
@@ -53,6 +61,7 @@ app.delete("/api/notes/:id", (req, res) => {
         }
       })
     })
+    // Prevent this delete http method from handing. Need to return something.
     res.send(`Deleted ${id}`)
   })
 })
@@ -62,6 +71,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/index.html"))
 })
 
+// Listen
 app.listen(3000, () => {
   console.log("Listening on port 3000.")
 })
