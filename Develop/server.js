@@ -1,11 +1,3 @@
-/*
-Todo: Deploy to Heroku
-Todo: Add live link to README
-Todo: Submit
-  - Github URl
-  - Live URL
-*/
-
 const express = require("express")
 const path = require("path")
 const {readFileThenRun, changeNotesThenWrite} = require("./readAndWrite")

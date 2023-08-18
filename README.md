@@ -26,7 +26,7 @@ Click on the "Get Started" button and type your notes title and note text. Then 
 ![screenshot 0](./screenshot_1.png)
 ![screenshot 1](./screenshot_2.png)
 
-You can check out the website through this [link]()
+You can check out the website through this [link](https://ryansheehy0-simple-note-taker-5524ccb13c33.herokuapp.com/)
 
 ## Credits
 
