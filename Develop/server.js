@@ -53,6 +53,7 @@ app.delete("/api/notes/:id", (req, res) => {
         }
       })
     })
+    res.send(`Deleted ${id}`)
   })
 })
 
